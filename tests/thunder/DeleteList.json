@@ -1,0 +1,28 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "w",
+    "collectionId": "baa92b51-5a8c-4235-9da2-3d73fc15a1da",
+    "dateExported": "2025-11-15T10:55:46.189Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f165fdd7-362d-406e-96b4-17ded27f5a13",
+            "colId": "baa92b51-5a8c-4235-9da2-3d73fc15a1da",
+            "containerId": "",
+            "name": "Delete list",
+            "url": "http://localhost:3001/list/delete/l1763122836815",
+            "method": "DELETE",
+            "sortNum": 10000,
+            "created": "2025-11-15T10:55:40.285Z",
+            "modified": "2025-11-15T10:55:40.285Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InUtb3duZXIiLCJlbWFpbCI6Im93bmVyQGV4YW1wbGUuY29tIiwicHJvZmlsZSI6Ik93bmVyIiwiaWF0IjoxNzYzMTIyNjY3LCJleHAiOjE3NjMxMjYyNjd9.Gr-2tK-h5Xdid4qVp9101yIyUdW4y5JQFZmPIMbQ_K4"
+                }
+            ]
+        }
+    ],
+    "ref": "QfWnCxD6YH5HoqrBIomERmbeyTjeaALITyspB32C9MY4kwZbYyRdyWTSGpBz_fBX-4NVaepHw0K9cb10H1gCbw"
+}

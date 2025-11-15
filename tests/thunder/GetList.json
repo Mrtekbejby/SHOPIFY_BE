@@ -1,0 +1,28 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "w",
+    "collectionId": "f9b3d875-bbe8-4980-a4e6-5ccb7bf4935d",
+    "dateExported": "2025-11-15T10:52:44.043Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "95d72fe3-f764-47b7-81f0-fef121faab06",
+            "colId": "f9b3d875-bbe8-4980-a4e6-5ccb7bf4935d",
+            "containerId": "",
+            "name": "Get list",
+            "url": "http://localhost:3001/list/get/l1763130193636",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-11-15T10:52:38.646Z",
+            "modified": "2025-11-15T10:52:38.646Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImthcmVsQGdtYWlsLmNvbSIsImVtYWlsIjoia2FyZWxAZ21haWwuY29tIiwicHJvZmlsZSI6IlVzZXIiLCJpYXQiOjE3NjMxMzAxNDcsImV4cCI6MTc2MzEzMzc0N30.xA7H2egAaSD3I9MQVH1UA3ps7wOctzGOOGlvkLRS_0U"
+                }
+            ]
+        }
+    ],
+    "ref": "KQkY1f-YNq0Bv5HFKT8lRXm8O68Yxjc7qusrVrYpdTGGdjKxkAs67qql6iN9ppmBrlj18a_RV_B5SjlvkEcK5g"
+}

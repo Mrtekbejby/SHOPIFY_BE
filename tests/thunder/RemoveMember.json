@@ -1,0 +1,33 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "w",
+    "collectionId": "051f66a7-d37b-48f7-96cd-afe8c5f93521",
+    "dateExported": "2025-11-15T10:52:19.971Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "fac93d19-e2b9-443d-874b-f819ed22b12a",
+            "colId": "051f66a7-d37b-48f7-96cd-afe8c5f93521",
+            "containerId": "",
+            "name": "Remove Member",
+            "url": "http://localhost:3001/list/removeMember/l1763130193636",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-11-15T10:52:13.067Z",
+            "modified": "2025-11-15T10:52:13.067Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImthcmVsQGdtYWlsLmNvbSIsImVtYWlsIjoia2FyZWxAZ21haWwuY29tIiwicHJvZmlsZSI6IlVzZXIiLCJpYXQiOjE3NjMxMzAxNDcsImV4cCI6MTc2MzEzMzc0N30.xA7H2egAaSD3I9MQVH1UA3ps7wOctzGOOGlvkLRS_0U"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"thomas@gmail.com\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "fd5aK2e56al0H2PyayFzsn34-7a-AqoFUJxhYqvcp3CF-s8BnRnDVc8i5bGyiBk1Y5lcewIxlIQFWB-qsn1isw"
+}

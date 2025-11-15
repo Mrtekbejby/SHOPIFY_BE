@@ -1,0 +1,28 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "w",
+    "collectionId": "e72084d3-3b22-45c4-82a8-c1b474c0e0d5",
+    "dateExported": "2025-11-15T10:53:41.669Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "498c1250-d7a3-4c78-b411-487054d78ade",
+            "colId": "e72084d3-3b22-45c4-82a8-c1b474c0e0d5",
+            "containerId": "",
+            "name": "mark item unCompleted",
+            "url": "http://localhost:3001/item/markUncompleted/i1763130312209",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-11-15T10:53:35.855Z",
+            "modified": "2025-11-15T10:53:35.855Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImthcmVsQGdtYWlsLmNvbSIsImVtYWlsIjoia2FyZWxAZ21haWwuY29tIiwicHJvZmlsZSI6IlVzZXIiLCJpYXQiOjE3NjMxMzAxNDcsImV4cCI6MTc2MzEzMzc0N30.xA7H2egAaSD3I9MQVH1UA3ps7wOctzGOOGlvkLRS_0U"
+                }
+            ]
+        }
+    ],
+    "ref": "1kf2JimLNaodg9MTpgDT2QERft1MLjmAadItQo4p_R_X5QYEfbDfQwk_hRZCRmSYX7ttPLi7BHXqjjPLR0UzNg"
+}
