@@ -1,14 +1,24 @@
-let users = [];
+import mongoose from "mongoose";
 
-export const findUserByEmail = (email) => {
-  return users.find((user) => user.email === email);
-};
+const userSchema = new mongoose.Schema(
+  {
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+      trim: true,
+      lowercase: true
+    },
+    password: {
+      type: String,
+      required: true
+    },
+    profile: {
+      type: String,
+      default: "User"
+    }
+  },
+  { timestamps: true }
+);
 
-export const createUser = (user) => {
-  users.push(user);
-  return user;
-};
-
-export const clearUsers = () => {
-  users = [];
-};
+export default mongoose.model("User", userSchema);

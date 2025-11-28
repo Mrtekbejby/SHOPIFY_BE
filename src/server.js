@@ -3,6 +3,15 @@ import listRoutes from "./routes/listRoutes.js";
 import itemRoutes from "./routes/itemRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
+
+mongoose
+  .connect(process.env.MONGO_URI, { dbName: "shopify" })
+  .then(() => console.log("Connected to MongoDB"))
+  .catch((err) => console.error("Mongo connection error:", err));
+
 const app = express();
 app.use(express.json());
 

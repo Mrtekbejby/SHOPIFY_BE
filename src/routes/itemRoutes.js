@@ -1,28 +1,16 @@
 import express from "express";
-import {
-  addItem,
-  listItems,
-  markItemCompleted,
-  markItemUncompleted,
-  removeItem
-} from "../controllers/itemController.js";
+import { addItem, toggleItem, deleteItem } from "../controllers/itemController.js";
 import { requireProfile } from "../middleware/auth.js";
 
 const router = express.Router();
 
-// POST /item/add
-router.post("/add", requireProfile(), addItem);
+// POST /item/:listId/add   → přidání položky
+router.post("/:listId/add", requireProfile(), addItem);
 
-// GET /item/list/:listId
-router.get("/list/:listId", requireProfile(), listItems);
+// POST /item/:listId/toggle/:itemId   → přepnutí completed
+router.post("/:listId/toggle/:itemId", requireProfile(), toggleItem);
 
-// POST /item/markCompleted/:id
-router.post("/markCompleted/:id", requireProfile(), markItemCompleted);
-
-// POST /item/markUncompleted/:id
-router.post("/markUncompleted/:id", requireProfile(), markItemUncompleted);
-
-// DELETE /item/remove/:id
-router.delete("/remove/:id", requireProfile(), removeItem);
+// DELETE /item/:listId/delete/:itemId   → odstranění položky
+router.delete("/:listId/delete/:itemId", requireProfile(), deleteItem);
 
 export default router;

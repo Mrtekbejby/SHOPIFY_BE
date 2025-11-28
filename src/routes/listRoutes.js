@@ -3,19 +3,20 @@ import {
   createList,
   getAllLists,
   getListById,
+  updateList,
   archiveList,
   deleteList,
-  updateList,
   addMember,
   removeMember,
-  leaveList
+  leaveList,
 } from "../controllers/listController.js";
+
 import { requireProfile } from "../middleware/auth.js";
 
 const router = express.Router();
 
 
- // GET /list/get
+// GET /list/get
 router.get("/get", requireProfile(), getAllLists);
 
 // GET /list/get/:id
@@ -30,16 +31,18 @@ router.post("/update/:id", requireProfile(), updateList);
 // POST /list/archive/:id
 router.post("/archive/:id", requireProfile(), archiveList);
 
-// POST /list/addMember/:id
-router.post("/addMember/:id", requireProfile(), addMember);
-
-// POST /list/removeMember/:id
-router.post("/removeMember/:id", requireProfile(), removeMember);
-
-// POST /list/leave/:id
-router.post("/leave/:id", requireProfile(), leaveList);
-
 // DELETE /list/delete/:id
 router.delete("/delete/:id", requireProfile(), deleteList);
+
+
+// POST /list/:id/add-member
+router.post("/:id/add-member", requireProfile(), addMember);
+
+// DELETE /list/:id/remove-member/:memberId
+router.delete("/:id/remove-member/:memberId", requireProfile(), removeMember);
+
+// POST /list/:id/leave
+router.post("/:id/leave", requireProfile(), leaveList);
+
 
 export default router;
